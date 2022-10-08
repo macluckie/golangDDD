@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: first-pod
+  labels: 
+    type: go-api
+spec:
+    containers:
+        image: localhost:5000/goapi  
+        name: test
+
+
+
+    
+
+  

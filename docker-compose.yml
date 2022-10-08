@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    golang:
+        build: .
+        volumes:
+            - .:/go/src/app:rw
+        ports:
+            - 4002:8080
+
+        command: go run cmd/main.go
+                
+        
